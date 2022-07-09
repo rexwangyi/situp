@@ -52,7 +52,7 @@ $(".circlebutton").on("click", function () {
       } else if (leftTime % 5 === 0) {
         saveData(sportsID, leftTime, count, false)
       }
-    }, 100)
+    }, 1000)
   } else {
     count++
     $("#count").text(count)
