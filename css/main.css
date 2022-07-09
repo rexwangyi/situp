@@ -1,0 +1,47 @@
+main{
+  text-align: center;
+  grid-column: 2;
+}
+
+#sportsChart{
+  text-align: left;
+}
+
+table{
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+thead th{
+  background:var(--marked);
+  text-align: center; 
+}
+
+#avg td{
+  background:var(--marked);
+  font-weight: bold;
+}
+
+.count {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.circlebutton{
+  background:#ff2052;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  color: white;
+  font-size: 80px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 1px;
+}
+
+.info{
+  color: gray;
+  font-size: 15px;
+}
