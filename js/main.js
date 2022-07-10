@@ -14,9 +14,11 @@ const users = [
 ];
 
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker
-    .register('js/sw.js')
-    .then(() => { console.log('Service Worker Registered'); });
+  navigator.serviceWorker.register('/sw.js').then(function(registration) {
+    console.log('ServiceWorker registration successful with scope:',  registration.scope);
+  }).catch(function(error) {
+    console.log('ServiceWorker registration failed:', errror);
+  });
 }
 
 let deferredPrompt;

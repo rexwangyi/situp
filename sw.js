@@ -1,15 +1,15 @@
 self.addEventListener('install', (e) => {
   console.log("install");
-  e.waitUntil(
-    caches.open('fox-store').then((cache) => cache.addAll([
-      '/',
-      '/index.html',
-      '/js/main.js',
-      '/js/chart.js',
-      '/css/main.css',
-      '/css/simple.css',
-    ])),
-  );
+  // e.waitUntil(
+  //   caches.open('fox-store').then((cache) => cache.addAll([
+  //     '/',
+  //     '/index.html',
+  //     '/js/main.js',
+  //     '/js/chart.js',
+  //     '/css/main.css',
+  //     '/css/simple.css',
+  //   ])),
+  // );
 });
 
 self.addEventListener('fetch', (e) => {
