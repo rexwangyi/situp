@@ -1,0 +1,18 @@
+{
+  "lang": "zh-cn",
+  "name": "Daily Sit Up",
+  "short_name": "SitUp",
+  "description": "a sit up app for pupil",
+  "start_url": "/",
+  "background_color": "#e6e6e6",
+  "theme_color": "#01b5dd",
+  "orientation": "portrait-primary",
+  "display": "standalone",
+  "icons": [
+      {
+          "src": "/icon512.png",
+          "sizes": "512x512",
+          "type": "image/png"
+      }
+  ]
+}

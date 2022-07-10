@@ -13,11 +13,16 @@ const users = [
   "Other"
 ];
 
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('/js/sw.js')
+    .then(() => { console.log('Service Worker Registered'); });
+}
 
 $(function () {
   // load user
   curUser = localStorage.getItem("user") || "Other"
-  $("#pagetitle").text("Sit Up For " + curUser)
+  $("#pagetitle").html("<i class='fa-solid fa-medal'></i>Sit Up For " + curUser)
   $("#user").val(curUser)
   localStorage.setItem("user", curUser)
 
@@ -77,7 +82,7 @@ $(".circlebutton").on("click", function () {
       } else if (leftTime % 5 === 0) {
         saveData(curUser, sportsID, leftTime, count, false)
       }
-    }, 1000)
+    }, 100)
   } else {
     count++
     $("#count").text(count)
