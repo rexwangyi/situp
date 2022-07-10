@@ -1,14 +1,18 @@
-<html>
+
+  <html>
+
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <title>Sit Up</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/simple.css" type="text/css" />
   </head>
+
   <body>
     <header>
-      <h1><i class="fa-solid fa-medal"></i>Sit Up</h1>
+      <h1 id="pagetitle"><i class="fa-solid fa-medal"></i>Sit Up</h1>
       <p>Exercies Everyday</p>
     </header>
     <main>
@@ -18,14 +22,23 @@
       <table>
         <thead>
           <th width="10%">Rank</th>
-          <th width="20%">ID</th>
+          <th width="20%">Times</th>
           <th width="15%">Count</th>
-          <th >DateTime</th>
+          <th>DateTime</th>
         </thead>
         <tbody id="record"></tbody>
       </table>
       <hr />
       <canvas id="sportsChart" width="100%"></canvas>
+      <hr />
+      <p>
+        <select id="user">
+          <option selected="selected" value="William">William</option>
+          <option value="Mom">Mom</option>
+          <option value="Dad">Dad</option>
+          <option value="Other">Other</option>
+        </select>
+      </p>
     </main>
 
     <footer>
@@ -40,4 +53,5 @@
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
   <script src="js/chart.js"></script>
   <script src="js/main.js"></script>
-</html>
+
+  </html>
